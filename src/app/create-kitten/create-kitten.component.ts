@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
+import {Kitten} from "../models/Kitten";
 
 @Component({
   selector: 'app-create-kitten',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./create-kitten.component.css']
 })
 export class CreateKittenComponent {
+  newKitten: Kitten = new Kitten('', '', new Date(), '');
 
+  @Output() sendKittenToParent = new EventEmitter<Kitten>();
+
+  createKitten() {
+    this.sendKittenToParent.emit(this.newKitten);
+    this.newKitten = new Kitten('', '', new Date(), '');
+  }
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Kitten} from "../models/Kitten";
 
 @Component({
   selector: 'app-root',

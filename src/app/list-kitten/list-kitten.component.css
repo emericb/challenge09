@@ -1,0 +1,35 @@
+.kitten-list {
+  text-align: center;
+  margin: 20px;
+}
+
+.kitten-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.kitten-card {
+  width: 300px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.kitten-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.kitten-description h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.kitten-description p {
+  margin: 5px 0;
+}
