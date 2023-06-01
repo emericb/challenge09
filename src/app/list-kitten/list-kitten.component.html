@@ -1,0 +1,7 @@
+<h2>Liste de chatons</h2>
+<div *ngFor="let kitten of kittens">
+  <h3>{{kitten.name}}</h3>
+  <p>{{kitten.race}}</p>
+  <p>{{kitten.birthDate | date : 'mediumDate'}}</p>
+  <img [src]="kitten.photo" alt="{{kitten.name}}"/>
+</div>
